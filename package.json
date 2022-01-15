@@ -19,5 +19,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mdichtler/ronin-api-wrapper.git"}
+    "url": "https://github.com/mdichtler/ronin-api-wrapper.git"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
