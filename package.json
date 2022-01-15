@@ -1,7 +1,7 @@
 {
   "name": "ronin-api-wrapper",
   "version": "0.0.1",
-  "description": "Wrapper for the Ronin Chain API",
+  "description": "Wrapper for the Ronin Chain API.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,9 @@
     "chain",
     "katana"
   ],
-  "author": "Martin Dichtler",
-  "license": "ISC"
+  "author": "@mdichtler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdichtler/ronin-api-wrapper.git"}
 }
