@@ -578,21 +578,7 @@ async function explorerGetTransactionDetails(txHash) {
   }
 }
 
-async function exchangeGetRates() {
-  /**
-   * Get current exchange rates for all supported currencies
-   * Conversion rates to CNY, EUR, GBP, JPY, KRW, MYR, PHP, SGD, USD, VND
-   * @since      1/21/2022
-   * @return {Object} Returns exchange rates or exception.
-   */
-  let url = "https://exchange-rate.axieinfinity.com/";
-  try {
-    let data = await axios.get(url);
-    return data.data;
-  } catch (e) {
-    return e;
-  }
-}
+
 
 async function explorerGetBlockDetails(blockNumber) {
   /**
@@ -626,6 +612,22 @@ async function explorerGetBlockDetails(blockNumber) {
   try {
     let data = await axios.get(url);
     return data.data?.pageProps?.block;
+  } catch (e) {
+    return e;
+  }
+}
+
+async function exchangeGetRates() {
+  /**
+   * Get current exchange rates for all supported currencies
+   * Conversion rates to CNY, EUR, GBP, JPY, KRW, MYR, PHP, SGD, USD, VND
+   * @since      1/21/2022
+   * @return {Object} Returns exchange rates or exception.
+   */
+  let url = "https://exchange-rate.axieinfinity.com/";
+  try {
+    let data = await axios.get(url);
+    return data.data;
   } catch (e) {
     return e;
   }
